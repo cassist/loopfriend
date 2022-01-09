@@ -1,0 +1,14 @@
+{
+  "AppVersion": "1.7.4.2",
+  "Title": "Loopfriend",
+  "Thumbnail": "io0w324t.jpg",
+  "Preview": "evbe4ut0.gif",
+  "Desc": "A simple way to select and configure (looping, ideally) animations and videos as a wallpaper.",
+  "Author": "cassist",
+  "License": "GNU GPLv3",
+  "Contact": null,
+  "Type": 1,
+  "FileName": "loopfriend.html",
+  "Arguments": null,
+  "IsAbsolutePath": false
+}

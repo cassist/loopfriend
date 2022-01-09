@@ -1,0 +1,29 @@
+{
+    "imgSelect": {
+        "type": "folderDropdown",
+        "value": "default.png",
+        "text": "Image File",
+        "filter": "*.jpg|*.png|*.webp|*.gif|*.apng",
+        "folder": "backgrounds"
+    },
+    "scalingSelect": {
+        "type": "dropdown",
+        "value": 0,
+        "text": "Scaling Algorithm",
+        "items": [
+        "Pixelated",
+        "Crisp Edges",
+        "HQ"
+        ]
+    },
+    "fitSelect": {
+        "type": "dropdown",
+        "value": 0,
+        "text": "Fitting",
+        "items": [
+        "Cover Screen",
+        "Contain Image",
+        "No Fitting"
+        ]
+    }
+}
