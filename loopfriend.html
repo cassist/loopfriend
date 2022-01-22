@@ -1,53 +1,21 @@
 <!DOCTYPE html>
-<head>
-  <style>
-    body{
-      margin: 0;
-      overflow: hidden;
-    }
-    #bg {
-      width: 100%;
-      height: 1080px;
-    }
-  </style>
-</head>
-<body>
-    <img id="bg" alt="" src="backgrounds/default.png">
-    <script>
-      function livelyPropertyListener(name, val) {
-        let image = document.getElementById("bg")
-          switch(name){
-            case "imgSelect": 
-              image.src = val
-            break;
-            case "scalingSelect":
-              switch(val){
-                case 0: // pixelated
-                  image.style.imageRendering="pixelated"
-                break;
-                case 1: // crispy
-                  image.style.imageRendering="-webkit-optimize-contrast"
-                break;
-                case 2: // HQ
-                  image.style.imageRendering="high-quality"
-                break;
-              }
-            break;
-            case "fitSelect":
-              switch(val){
-                case 0: // Fit to Width
-                  image.style.objectFit="cover"
-                break;
-                case 1: // Fit to Height
-                  image.style.objectFit="contain"
-                break;
-                case 2: // Not Fit
-                image.style.objectFit="none"
-                break;
-              }
-            break;
-          }
+  <head>
+    <title>loopfriend - Animated Wallpaper Assistant</title>
+    <style>
+      html, body {
+        overflow: hidden;
+        background-color: #FFFFFF;
       }
-    </script>
-</body>
+      body{
+        margin: 0;
+        position: fixed;
+        width: 100%;
+        height: 100%;
+      }
+    </style>
+  </head>
+  <body>
+      <img id="bg" style="width:100%;height:100%">
+      <script src="./filter.js"></script>
+  </body>
 </html>
