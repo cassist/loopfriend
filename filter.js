@@ -1,11 +1,13 @@
 const image = document.getElementById('bg');
+const eBody = document.body;
 
 // global settings!!!!! XD
 let config = {
   src: "",
   scale: 1,
   fitmode: "cover",
-  rendering: "pixelated"
+  rendering: "pixelated",
+  bgcolour: 0xFFFFFF
 }
 
 function refreshWallpaper() {
@@ -13,12 +15,16 @@ function refreshWallpaper() {
   image.style.imageRendering=config.rendering
   image.style.objectFit=config.fitmode
   image.src=config.src
+  eBody.style.backgroundColor = config.bgcolour
 }
 
 function livelyPropertyListener(name, val) {
     switch(name){
       case "imgSelect":
         config.src = val
+      break;
+      case "colourSelect":
+        config.bgcolour = val
       break;
       case "fitSelect":
         switch(val){
