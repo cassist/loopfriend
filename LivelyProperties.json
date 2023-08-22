@@ -24,5 +24,10 @@
         "Contain Image",
         "No Fitting"
         ]
+    },
+    "colourSelect": {
+        "text": "Background Colour",
+        "type": "color",
+        "value": "#FFFFFF"
     }
 }
