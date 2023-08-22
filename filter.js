@@ -6,6 +6,8 @@ let config = {
   src: "",
   scale: 1,
   fitmode: "cover",
+  hPos: 50,
+  vPos: 50,
   rendering: "pixelated",
   bgcolour: 0xFFFFFF
 }
@@ -14,6 +16,7 @@ function refreshWallpaper() {
   // for now, simply update image properties with config
   image.style.imageRendering=config.rendering
   image.style.objectFit=config.fitmode
+  image.style.objectPosition=`${config.hPos}% ${config.vPos}%`
   image.src=config.src
   eBody.style.backgroundColor = config.bgcolour
 }
@@ -38,6 +41,12 @@ function livelyPropertyListener(name, val) {
             config.fitmode="none"
           break;
         }
+      break;
+      case "hPosSelect":
+        config.hPos = val
+      break;
+      case "vPosSelect":
+        config.vPos = val
       break;
       case "scalingSelect":
         switch(val){
